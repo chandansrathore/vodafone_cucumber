@@ -26,14 +26,11 @@ public class Steps {
 		driver.findElement(By.className("fa-user")).click();
 
 	}
-
 	@When("^I update teh user name as \"([^\"]*)\"$")
 	public void i_update_teh_user_name_as(String arg1){
 	    // Write code here that turns the phrase above into concrete actions
 		driver.findElement(By.id("email")).sendKeys(arg1);
-
 	}
-
 	@When("^I update the password as \"([^\"]*)\"$")
 	public void i_update_the_password_as(String arg1) {
 	    // Write code here that turns the phrase above into concrete actions
